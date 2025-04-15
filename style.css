@@ -1,0 +1,192 @@
+/* Warna dasar */
+:root {
+  --primary: #1D3C6A; /* Darker Navy Blue */
+  --background: #121212;
+  --text: #f4f4f4; /* Soft White Text for better contrast */
+  --dark-bg: #1a1a1a;
+  --dark-text: #e4e4e4;
+  --card-bg: #1e1e1e;
+}
+
+body {
+  margin: 0;
+  font-family: 'Fira Code', sans-serif; /* Elegant font */
+  background-color: var(--background);
+  color: var(--text);
+  scroll-behavior: smooth;
+}
+
+header {
+  background: var(--primary);
+  color: white;
+  padding: 1.5em;
+  text-align: center;
+  font-family: 'Merriweather', serif; /* Elegant font for header */
+}
+
+nav {
+  margin-top: 1em;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  margin: 0 1.5em;
+  font-size: 1.1em;
+  font-family: 'Roboto', sans-serif;
+}
+
+nav a:hover {
+  text-decoration: underline;
+  color: #f4f4f4; /* Subtle hover effect */
+}
+
+section {
+  max-width: 900px;
+  margin: auto;
+  padding: 2.5em;
+  line-height: 1.6;
+}
+
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Adjust grid layout for elegance */
+  gap: 1.5em;
+}
+
+.gallery-grid img {
+  width: 100%;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Slight shadow for elegance */
+}
+
+article {
+  background: var(--card-bg);
+  margin-bottom: 2.5em;
+  padding: 1.5em;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2em;
+}
+
+input, textarea, button {
+  font-size: 1em;
+  padding: 1em;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-family: 'Roboto', sans-serif;
+}
+
+button {
+  background: var(--primary);
+  color: white;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+button:hover {
+  opacity: 0.9;
+}
+
+footer {
+  text-align: center;
+  padding: 1.5em;
+  background: #1c1c1c;
+  color: #f4f4f4;
+  margin-top: 2em;
+  font-family: 'Roboto', sans-serif;
+}
+
+#backToTop {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  display: none;
+  padding: 0.7em 1.2em;
+  background: var(--primary);
+  color: white;
+  border-radius: 50%;
+  font-size: 1.5em;
+  border: none;
+  z-index: 999;
+}
+
+/* Reveal animation */
+.reveal {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: 0.8s ease;
+}
+
+.reveal.active {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Tambahan styling untuk navbar */
+nav {
+  display: flex;
+  justify-content: center; /* Keep navbar centered */
+  align-items: center;
+  padding: 1rem 2rem;
+  background-color: var(--primary);
+  color: white;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+nav .logo {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: white;
+  font-family: 'Merriweather', serif;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: white;
+  transition: color 0.3s ease;
+  font-size: 1.1em;
+}
+
+nav ul li a:hover {
+  color: #f4f4f4;
+}
+
+/* Style for software logos section */
+.software-logos {
+  display: flex;
+  justify-content: center; /* Center the logos */
+  gap: 1.5em; /* Add space between logos */
+  flex-wrap: wrap; /* Allow logos to wrap on smaller screens */
+  margin-top: 2em; /* Add margin at the top */
+}
+
+.software-logos img {
+  width: 80px; /* Set a fixed width for the images */
+  height: auto; /* Maintain aspect ratio */
+  transition: transform 0.3s ease; /* Smooth hover effect */
+}
+
+.software-logos img:hover {
+  transform: scale(1.1); /* Enlarge the logo slightly when hovered */
+}
+
+h2, h3, p {
+  text-align: center; /* Memusatkan teks di dalam elemen */
+  margin-bottom: 1em; /* Menambahkan margin bawah untuk jarak */
+}
