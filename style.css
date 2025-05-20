@@ -129,7 +129,12 @@ footer {
   opacity: 1;
   transform: translateY(0);
 }
-
+.reveal {
+  text-align: center;
+  max-width: 800px;        /* agar tidak terlalu lebar di layar besar */
+  margin: 0 auto;          /* memosisikan div ke tengah */
+  padding: 20px;           /* ruang dalam agar tidak terlalu mepet */
+}
 /* Tambahan styling untuk navbar */
 nav {
   display: flex;
