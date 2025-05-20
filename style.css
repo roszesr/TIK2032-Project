@@ -190,6 +190,16 @@ nav ul li a:hover {
 .software-logos img:hover {
   transform: scale(1.1); /* Enlarge the logo slightly when hovered */
 }
+.software-logos img {
+  width: 60px;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+  cursor: pointer;
+}
+
+.software-logos img:hover {
+  transform: scale(1.2) rotate(5deg); 
+  opacity: 0.8; 
+}
 
 h2, h3, p {
   text-align: center; /* Memusatkan teks di dalam elemen */
